@@ -1,0 +1,87 @@
+/* products/style.css */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9c0a5a;
+    padding: 15px;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-weight: bold;
+}
+
+button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.details-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #eee;
+}
+
+.details-container img {
+    max-width: 200px;
+    display: block;
+    margin-bottom: 20px;
+}

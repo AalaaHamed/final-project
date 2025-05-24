@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9c0a5a;
+    padding: 15px;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.welcome-container h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.welcome-container p {
+    font-size: 20px;
+    max-width: 600px;
+}
+
+.hero {
+    height: 400px;
+    background-image: url('assets/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(184, 185, 168);
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+}
+
+.shop-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #fff;
+    color: #220310;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.featured-products {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: lch(84.71% 21.8 345.97);
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.product-grid img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* يسمح بالكسر للسطر التالي لو ما فيش مكان */
+    gap: 20px;
+    /* مسافة بين الكروت */
+    justify-content: center;
+    /* توسيط الكروت أفقياً */
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    /* حجم كل كارت */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+footer {
+    background-color: #eebdd6;
+    color: rgb(155, 8, 69);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

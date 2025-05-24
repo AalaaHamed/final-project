@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../admin/admin.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Lol-Shop</div>
+        <ul>
+            <li><a href="../pages/home.html">Home</a></li>
+            <li><a href="../products/products.html">Products</a></li>
+            <li><a href="../cart/cart.html" class="cart-link">Cart (<span id="cartCount">0</span>)</a></li>
+            <li><a href="../orders/orders.html">orders</a></li>
+            <li><a href="../admin/admin.html">admin</a></li>
+        </ul>
+        <div class="user-info">
+            <span id="username">User</span>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </nav>
+    <h2>Admin Dashboard - Product Management</h2>
+
+    <div id="productsContainer"></div>
+
+    <h3>Add / Edit Product</h3>
+    <form id="productForm">
+        <input type="hidden" id="productId" />
+        <input type="text" id="productTitle" placeholder="Product Title" required />
+        <input type="number" id="productPrice" placeholder="Price" required step="0.01" min="0" />
+        <input type="text" id="productImage" placeholder="Image URL" required />
+        <button type="submit">Save Product</button>
+        <button type="button" id="cancelEditBtn" style="display:none;">Cancel Edit</button>
+    </form>
+
+    <script type="module" src="./dashboard.js"></script>
+    <script src="../auth/Logout.js"></script>
+
+</body>
+
+</html>

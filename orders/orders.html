@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style.css">
+    <title>Orders</title>
+    <style>
+        .order-card {
+            border: 1px solid #ccc;
+            padding: 12px;
+            margin-bottom: 12px;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Lol-Shop</div>
+        <ul>
+            <li><a href="../pages/home.html">Home</a></li>
+            <li><a href="../products/products.html">Products</a></li>
+            <li><a href="../cart/cart.html" class="cart-link">Cart (<span id="cartCount">0</span>)</a></li>
+            <li><a href="../orders/orders.html">orders</a></li>
+            <li><a href="../auth/login.html">login</a></li>
+            <li><a href="../auth/register.html">register</a></li>
+            <li><a href="../admin/admin.html">admin</a></li>
+        </ul>
+        <div class="user-info">
+            <span id="username">User</span>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </nav>
+    <h2>My Orders</h2>
+    <div id="ordersContainer"></div>
+
+    <script src="./orders.js"></script>
+</body>
+
+</html>

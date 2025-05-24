@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../cart/cart.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Lol-Shop</div>
+        <ul>
+            <li><a href="../pages/home.html">Home</a></li>
+            <li><a href="../products/products.html">Products</a></li>
+            <li><a href="../cart/cart.html" class="cart-link">Cart (<span id="cartCount">0</span>)</a></li>
+            <li><a href="../orders/orders.html">orders</a></li>
+            <li><a href="../auth/login.html">login</a></li>
+            <li><a href="../auth/register.html">register</a></li>
+            <li><a href="../admin/admin.html">admin</a></li>
+        </ul>
+        <div class="user-info">
+            <span id="username">User</span>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </nav>
+
+    <section class="cart-container">
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <div class="cart-summary">
+            <p>Total: $<span id="totalPrice">0</span></p>
+            <button id="checkoutBtn">Checkout</button>
+        </div>
+    </section>
+    <script type="module" src="cart.js" defer></script>
+    <script src="../auth/Logout.js"></script>
+</body>
+
+</html>

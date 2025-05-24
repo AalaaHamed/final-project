@@ -1,0 +1,44 @@
+<!-- products/products.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Products</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../products/products.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Lol-Shop</div>
+        <ul>
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="../products/products.html">Products</a></li>
+            <li><a href="../cart/cart.html" class="cart-link">Cart (<span id="cartCount">0</span>)</a></li>
+            <li><a href="../orders/orders.html">orders</a></li>
+            <li><a href="../auth/login.html">login</a></li>
+            <li><a href="../auth/register.html">register</a></li>
+            <li><a href="../admin/admin.html">admin</a></li>
+        </ul>
+        <div class="user-info">
+            <span id="username">User</span>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </nav>
+    <h2>Our Products</h2>
+    <!-- أدوات البحث والفلاتر -->
+    <div class="filters">
+        <input type="text" id="searchInput" placeholder="Search products..." />
+        <select id="categorySelect">
+            <option value="all">All Categories</option>
+        </select>
+    </div>
+
+    <div id="productsList" class="grid"></div>
+
+    <script type="module" src="../products/products.js"></script>
+    <script src="../auth/Logout.js"></script>
+</body>
+
+</html>
