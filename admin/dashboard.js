@@ -6,7 +6,7 @@ const loggedInUser = JSON.parse(localStorage.getItem('currentUser'));
 // حماية الصفحة من غير الأدمن
 if (!loggedInUser || !loggedInUser.isAdmin) {
     alert('Access denied! You must be an admin to view this page.');
-    window.location.href = '../home.html';
+    window.location.href = '../index.html';
     throw new Error('Unauthorized access');
 }
 

@@ -26,6 +26,6 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
 
         window.location.href = '../admin/admin.html';
     } else {
-        window.location.href = '../home.html';
+        window.location.href = '../index.html';
     }
 });
