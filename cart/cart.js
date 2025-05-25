@@ -113,5 +113,4 @@ function checkout() {
     window.location.href = '../orders/orders.html';
 }
 
-// تأكد من ربط الزر:
 document.getElementById('checkoutBtn').addEventListener('click', checkout);
